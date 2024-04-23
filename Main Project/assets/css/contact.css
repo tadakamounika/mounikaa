@@ -1,0 +1,610 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* header */
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        padding: 8px;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    
+    }
+    .logo{
+        height: 80px;
+        width:160px;
+        float: left;
+    
+    }
+    .menulist{
+        list-style-type: none;
+        margin-top: 35px;
+        margin-left: 50px;
+        overflow: hidden;
+    }
+    
+    .menulist-items, .menulist-items1, .menulist-items2, .menulist-items3, .menulist-items4,.menulist-items5,.menulist-items6{
+        display: inline;
+        font-weight: bold;
+        margin-left: 25px;
+    }
+    
+    .menulist-items>a, .menulist-items1>a, .menulist-items2>a, .menulist-items3>a, .menulist-items4>a, .menulist-items5>a, .menulist-items6>a{
+        text-decoration: none;
+        font-size: 20px;
+        color:black;
+    }
+    .menulist-items a:hover,.menulist-items1 a:hover,.menulist-items2 a:hover,.menulist-items3 a:hover,.menulist-items4 a:hover,.menulist-items5 a:hover,.menulist-items6 a:hover{
+        text-decoration: underline;
+    }
+    .header>button{
+        text-align: center;
+        box-shadow: 1px 1px 3px grey;
+        width:10%;
+        height:50px;
+        margin-left: 30px;
+        border-radius: 20px;
+        border-color: transparent;
+        margin-top: 12px;
+    }
+    .download-app{
+        background-color:#f2c434;
+    }
+    .bookride{
+        background-color:red;
+    }
+    button a{
+        text-decoration: none;
+        color:white;
+        font-size: 15px;
+        text-shadow: 2px 2px 6px black;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+
+
+
+
+                                /* Contact page CSS */
+    .contact-forms{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 75px;
+
+    }
+    .align>input{
+        width: 600px;
+        height: 30px;
+    }
+    .slection-iteam{
+        width: 600px;
+        margin-top: 10px;
+        height: 30px;
+
+    }
+
+    .sumbit-contact{
+        margin-top: 20px;
+        text-align: center;
+        background-color: #f9c935;
+        width: 610px;
+        height: 40px;
+        color: black;
+        border: none;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .forms1-contact{
+        width: 500px;
+        font-size: 20px;
+        /* margin-right: 100px; */
+        margin-top: 250px;
+        background-color: #f9c935;
+        height: 500px;
+        padding:20px ;
+    }
+
+    .form-content>p{
+        text-align: justify;
+    }
+
+
+    /* footer */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        background-color:black;
+        bottom: 0px;
+        width: 100%;
+    
+    }
+    
+    .footer-content{
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: center;
+    }
+    .appinfo>h2,.appinfo1>h2{
+        color: white;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .appinfo,.appinfo1,.appinfo2,.appinfo3.appinfo4{
+    
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+        font-size: 10px;
+        margin-left: 25px;
+    }
+    
+    .appinfo>a{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }  
+    .appinfo1>img{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .appinfo-menulist2,.appinfo-menulist3,.appinfo-menulist4{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        list-style-type:none;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+    
+    .appinfo-menulist h3{
+        color: white;
+        margin-left: 5px;
+    }
+    
+    .footer>hr{
+        width:100%;
+        color:grey;
+    }
+
+    .appinfo-menulist2>li{
+        padding-top: 15px;
+        font-size: 20px; 
+    
+    }
+    .appinfo-menulist2>li>a{
+        color: white;
+        text-decoration: none;
+    }
+    .appinfo-menulist3>li{
+        padding-top: 15px;
+        font-size: 20px; 
+        margin-left: 50px; 
+
+    }
+    .appinfo-menulist3>li>a{
+        color: white;
+        text-decoration: none;
+    }
+    .appinfo-menulist4>li{
+        padding-top: 15px;
+        font-size: 20px; 
+        margin-left: 50px;  
+    }
+    .appinfo-menulist4>li>a{
+        color: white;
+        text-decoration: none;
+    }
+    .appinfo-menulist4>li>i{
+     font-size: 20px;
+     margin-right: 10px;
+     color: white;
+    }
+    .copyright{
+        color: white;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+
+                    /* Contact Page Tablet view */
+
+     @media screen and (min-width:426px)  and (max-width:768px){
+   .header{
+        width: max-content;
+     }   
+
+     .header>img{
+        margin-left: 100px;
+     }
+     .menulist{
+        width: 100%;
+     }
+     .header>button{
+        width:250px;
+     }
+     .header .download-app{
+      margin-left: -100px;
+      margin-top: 20px;
+    }
+    .header .bookride{
+    margin-top: 20px;
+    }    
+               
+    .contact-forms{
+        display: block;
+    
+        text-align: center;
+               
+       }
+   
+      .contact-align>h1{
+       font-size: 40px;
+       margin-left: 10px;
+      }
+      .contact-align>p{
+       margin-left: 10px;
+      
+      }
+      .align>label{
+       margin-left: 10px;
+      }
+      
+      .align>input{
+       margin-left: 5px;
+      }
+     
+       .align>textarea{
+       margin-left: 5px;
+       }
+       .slection-iteam{
+           margin-left: 5px;
+       }
+
+.forms1-contact{
+   
+    margin-top: 0px;
+    margin-left: 385px;
+    width:610px;
+    height: 370px;
+}
+    body{
+        width: max-content;
+    }
+    .footer{
+        margin-top: 20px;
+    }
+
+     }
+
+
+
+                                    /* Contact page Laptop view */
+@media screen and (min-width:770px )  and (max-width:1025px){
+      
+  
+
+     .header{
+        width: max-content;
+     }    
+     .header>img{
+        margin-left: 100px;
+     }
+     .menulist{
+        width: 100%;
+     }
+     .header>button{
+        width:250px;
+     }
+     .header .download-app{
+      margin-left: -100px;
+      margin-top: 20px;
+    }
+    .header .bookride{
+    margin-top: 20px;
+    } 
+
+
+    .contact-forms{
+        display: block;
+        width: 100%;
+        text-align: center;
+        /* margin-left: 100px; */
+        margin-top: 50px;
+               
+       }
+   
+      .contact-align>h1{
+       font-size: 40px;
+       margin-left: 100px;
+      }
+      .contact-align>p{
+       margin-left: 10px;
+      
+      }
+      .align>label{
+       margin-left: 10px;
+      }
+      
+      .align>input{
+       margin-left: 5px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+      }
+       .forms1-contact{
+           display: block;
+           width: 610px;
+           height: 400px;
+           align-items: center;
+           margin-left: 380px;
+           margin-top: 0px;
+           margin-bottom: 50px;
+
+       }
+       textarea{
+        margin-top: 10px;
+       }
+       
+     
+       body{
+        width: max-content;
+       }
+       .footer{
+        width: 100%;
+        /* margin-left: 50px; */
+       }
+     
+
+     }
+
+  
+                              
+
+
+                                  /* Contact page Moblie view */
+
+    @media screen  and (max-width:426px) {
+  
+
+        body{
+            width: max-content;
+        }
+    .header{
+        width: max-content;
+    }
+    .header>img{
+        margin-left: 100px;
+    }
+  .header .menulist{
+    width: 600px;
+  }
+.menulist{
+    display: none;
+}
+  .header .menulist .menulist-items{
+    margin-top: 100px;
+  }
+  .header .download-app {
+    margin-top: 200px;
+    margin-left: 150px;
+    width: 400px;
+    height: 100px;
+
+  }
+  .header .bookride{
+    margin-top: 200px;
+    width: 400px;
+    height: 100px;
+  }
+.header .download-app>a{
+    font-size: 50px;
+    padding: 10px;
+  }
+.header .bookride>a{
+    font-size: 50px;
+    padding: 10px;
+  }
+    .logo{
+        height: 390px;
+        width:350px;
+    
+    }
+    .menulist{
+        margin-top: 100px;
+        margin-left: 40px;
+    }
+    
+    .menulist-items, .menulist-items1, .menulist-items2, .menulist-items3, .menulist-items4,.menulist-items5,.menulist-items6{
+    
+        margin-left: 50px;
+        padding-top: 10PX;
+    }
+    
+    .menulist-items>a, .menulist-items1>a, .menulist-items2>a, .menulist-items3>a, .menulist-items4>a, .menulist-items5>a, .menulist-items6>a{
+        padding: 70px;
+        font-size: 50px;
+        margin: 50px;
+    }
+    .header>button{
+        margin-left: 40px;
+        margin-top: 55px;
+        width:12%;
+        height:80px;
+        display: block;
+    }
+    button a{
+        font-size: 25px;
+    }  
+
+
+
+
+
+
+    .contact-forms{
+     display: block;
+     width: 100%;
+     text-align: center;
+     /* margin-left: 300px; */
+            
+    }
+
+    .contact-align>h1{
+    margin-left: 130px;
+   }
+   .contact-align>p{
+    margin-left: 130px;
+   
+   } 
+   .align>label{
+    /* margin-left: 100px; */
+    font-size: 30px;
+   }
+   
+   .align>input{
+    height: 50px;
+    width: 800px;
+    /* margin-left: 5px; */
+   }
+    .forms1-contact{
+        display: block;
+        width: 610px;
+        margin-top: 0px;
+        height: 450px;
+        align-items: center;
+    }
+    .align>textarea{
+    margin-left: 5px;
+    }
+    .slection-iteam{
+        width: 800px;
+        height: 50px;
+    }
+    textarea{
+        width: 800px;
+        margin-top: 50px;
+    }
+    .forms1-contact{
+        margin-left: 420px;
+    }
+
+    
+.footer{
+   
+    margin-top: 20px;
+    /* bottom: 0px;
+    width: 1550px;
+    height:2500px; */
+
+} 
+
+ .footer-content{
+    display: block;
+    justify-content: center;
+ }
+
+.appinfo>h2,.appinfo1>h2{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px; 
+}
+
+.appinfo,.appinfo1{
+
+    display: block;
+    padding: 3px;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+.appinfo>a>img{
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-left: 150px;
+    height: 150px;
+}  
+.appinfo1>img{
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-left: 150px;
+    height: 150px;
+}
+
+ .appinfo-menulist2,.appinfo-menulist3,.appinfo-menulist4{
+    display: flex;
+    flex-direction: column;
+ justify-content: center; 
+    list-style-type:none;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+.appinfo-menulist h3{
+    margin-left: 5px;
+}
+
+.appinfo-menulist2>li{
+    padding-top: 15px;
+    font-size: 70px; 
+
+}
+.appinfo-menulist2>li>a{
+    font-size: 70px; 
+}
+.appinfo-menulist3>li{
+    padding-top: 15px;
+    font-size: 70px; 
+    margin-left: 50px; 
+
+}
+.appinfo2{
+    margin-left: 400px;
+}
+.appinfo-menulist3>li{
+    text-decoration: none;
+}
+.appinfo-menulist4>li{
+    padding-top: 15px;
+    font-size: 70px; 
+    margin-left: 50px;  
+    margin-top: 10px;
+}
+
+.appinfo-menulist4>li>i{
+ font-size: 60px;
+ margin-right: 10px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 50px;
+} 
+div.appinfo2, div.appinfo3, div.appinfo4{
+display:flex;
+flex-direction: column;
+margin-bottom: 30px;
+justify-content: center;
+}
+div.appinfo2{
+    margin-left: 550px;
+    margin-top: 50px;
+}
+div.appinfo3, div.appinfo4{
+    margin-left: 500px;
+    font-size: 50px;
+    margin-top: 50px;
+
+  }
+}
